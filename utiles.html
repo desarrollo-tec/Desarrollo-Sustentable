@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0000ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .back {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #efeff1;
+      z-index: -1;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #ffffff; /* Color de fondo blanco */
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      top: -130px; /* Escondido inicialmente */
+      transition: top 0.3s ease;
+      z-index: 1000;
+    }
+
+    nav:hover {
+      top: 0; /* Mostrar al pasar el mouse */
+    }
+
+    nav::after {
+      content: '';
+      display: block;
+      height: 20px; /* Tamaño visible siempre */
+      background-color: rgba(255, 255, 255, 0.7); /* Color de fondo blanco */
+    }
+
+    nav a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333; /* Color del texto negro */
+      margin: 0 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 100px auto 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .ponce, .toto {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #303030;
+      color: #ffffff;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .ponce:hover, .toto:hover {
+      background-color: #ff6b6b;
+      color: #ffffff;
+    }
+
+    .datos {
+      padding: 10px;
+      background-color: #303030;
+      color: #ffffff;
+      text-align: left;
+      border-radius: 0px;
+      width: 200px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .datos:hover {
+      background-color: #0000ff; /* Color azul al pasar el mouse */
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="back"></div>
+
+<nav>
+  <h1> Lenguajes Utiles </h1>
+  <a href="principal.html">Lenguajes Principales</a>
+  <a href="index.html">Menu Principal</a>
+  <a href="importantes.html">Lenguajes Importantes</a>
+</nav>
+<div class="container">
+  <div class="ponce">
+    <p><strong>¿Qué es SQL?</strong></p>
+    <p>SQL (Structured Query Language) es un lenguaje de programación utilizado para administrar y manipular bases de datos relacionales. Es un estándar de facto para sistemas de gestión de bases de datos (DBMS) como MySQL, PostgreSQL, SQL Server, Oracle, entre otros.
+      <br><br>
+      Algunas de las características y usos de SQL son:
+      <br><br>
+      - Consultas de bases de datos: SQL se utiliza para realizar consultas y extraer información de bases de datos relacionales.
+      <br>
+      - Manipulación de datos: SQL permite insertar, actualizar y eliminar datos en tablas de bases de datos.
+      <br>
+      - Definición de datos: SQL se utiliza para definir la estructura de las tablas, así como las restricciones y relaciones entre ellas.
+      <br>
+      - Administración de bases de datos: SQL permite crear y gestionar bases de datos, así como controlar el acceso a los datos mediante la creación de usuarios y la aplicación de permisos.
+    </p>
+  </div>
+
+
+<video width="1000" height="660" controls>
+  <source src="sql.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
+
+
+  <div class="toto">
+    <p><strong>¿Qué es Swift?</strong></p>
+    <p>Swift es un lenguaje de programación desarrollado por Apple para el desarrollo de aplicaciones iOS, macOS, watchOS y tvOS. Fue lanzado en 2014 como un reemplazo moderno para Objective-C, con el objetivo de ser más seguro, rápido y fácil de usar.
+      <br><br>
+      Algunas de las características y usos de Swift son:
+      <br><br>
+      - Desarrollo de aplicaciones móviles: Swift se utiliza principalmente para desarrollar aplicaciones para dispositivos Apple, incluyendo iPhone, iPad, Apple Watch y Apple TV.
+      <br>
+      - Sintaxis clara y concisa: Swift tiene una sintaxis limpia y fácil de entender, lo que facilita la escritura y lectura del código.
+      <br>
+      - Seguridad y rendimiento: Swift incluye características de seguridad integradas para prevenir errores comunes de programación, así como optimizaciones de rendimiento para mejorar el rendimiento de las aplicaciones.
+      <br>
+      - Interoperabilidad con Objective-C: Swift es compatible con código Objective-C existente, lo que permite a los desarrolladores migrar gradualmente sus aplicaciones a Swift.
+      <br>
+      - Comunidad activa: Swift tiene una comunidad de desarrolladores activa y creciente, con una amplia gama de bibliotecas y herramientas disponibles para su uso.
+    </p>
+  </div>
+</div>
+
+
+</body>
+</html>

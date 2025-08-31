@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0000ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .back {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #efeff1;
+      z-index: -1;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #ffffff; /* Color de fondo blanco */
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      top: -130px; /* Escondido inicialmente */
+      transition: top 0.3s ease;
+      z-index: 1000;
+    }
+
+    nav:hover {
+      top: 0; /* Mostrar al pasar el mouse */
+    }
+
+    nav::after {
+      content: '';
+      display: block;
+      height: 20px; /* Tamaño visible siempre */
+      background-color: rgba(255, 255, 255, 0.7); /* Color de fondo blanco */
+    }
+
+    nav a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333; /* Color del texto negro */
+      margin: 0 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 100px auto 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .ponce, .toto {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #303030;
+      color: #ffffff;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .ponce:hover, .toto:hover {
+      background-color: #ff6b6b;
+      color: #ffffff;
+    }
+
+    .datos {
+      padding: 10px;
+      background-color: #303030;
+      color: #ffffff;
+      text-align: left;
+      border-radius: 0px;
+      width: 200px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .datos:hover {
+      background-color: #0000ff; /* Color azul al pasar el mouse */
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="back"></div>
+
+<nav>
+  <h1> Lenguajes Importantes </h1>
+  <a href="principal.html">Lenguajes Principales</a>
+  <a href="index.html">Menu Principal</a>
+  <a href="utiles.html">Lenguajes Mas Utiles</a>
+</nav>
+<div class="container">
+  <div class="ponce">
+    <p><strong>¿Qué es C++?</strong></p>
+    <p>C++ es un lenguaje de programación de alto nivel y multiparadigma, que extiende el lenguaje de programación C. Es ampliamente utilizado en el desarrollo de software de sistemas, aplicaciones de escritorio, aplicaciones móviles y juegos, entre otros.
+      <br><br>
+      Algunas de sus características son:
+      <br><br>
+      - Soporte para programación orientada a objetos.
+      <br>
+      - Eficiencia y control sobre el hardware.
+      <br>
+      - Portabilidad y compatibilidad.
+      <br>
+      - Flexibilidad y extensibilidad.
+      <br><br>
+      C++ se utiliza en una variedad de áreas, incluyendo desarrollo de sistemas operativos, desarrollo de software de alto rendimiento, desarrollo de juegos y desarrollo de aplicaciones de escritorio.
+    </p>
+  </div>
+
+
+<video width="1000" height="660" controls>
+  <source src="php.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
+
+
+  <div class="toto">
+    <p><strong>¿Qué es PHP?</strong></p>
+    <p>PHP es un lenguaje de programación de propósito general, especialmente adecuado para el desarrollo web. Es un lenguaje interpretado que se ejecuta del lado del servidor y puede integrarse fácilmente con HTML.
+      <br><br>
+      Algunas de las características y usos de PHP son:
+      <br><br>
+      - Creación de sitios web dinámicos: PHP es ampliamente utilizado en el desarrollo de sitios web dinámicos y aplicaciones web, ya que puede generar contenido HTML de forma dinámica en función de la lógica de programación.
+      <br>
+      - Interacción con bases de datos: PHP tiene una excelente integración con bases de datos, lo que permite a los desarrolladores crear aplicaciones web que almacenan y recuperan datos de manera eficiente.
+      <br>
+      - Desarrollo de sistemas de gestión de contenidos (CMS): Muchos CMS populares, como WordPress, Drupal y Joomla, están construidos con PHP.
+      <br>
+      - Procesamiento de formularios: PHP puede procesar fácilmente datos de formularios HTML, lo que lo hace ideal para la creación de formularios y manejo de entradas de usuario.
+      <br>
+      - Creación de APIs: PHP se utiliza comúnmente para crear APIs (Interfaces de Programación de Aplicaciones) que permiten a diferentes aplicaciones comunicarse entre sí.
+    </p>
+  </div>
+</div>
+
+
+</body>
+</html>

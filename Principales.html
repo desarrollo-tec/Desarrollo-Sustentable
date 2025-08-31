@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0000ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .back {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #efeff1;
+      z-index: -1;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #ffffff; /* Color de fondo blanco */
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      top: -130px; /* Escondido inicialmente */
+      transition: top 0.3s ease;
+      z-index: 1000;
+    }
+
+    nav:hover {
+      top: 0; /* Mostrar al pasar el mouse */
+    }
+
+    nav::after {
+      content: '';
+      display: block;
+      height: 20px; /* Tamaño visible siempre */
+      background-color: rgba(255, 255, 255, 0.7); /* Color de fondo blanco */
+    }
+
+    nav a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333; /* Color del texto negro */
+      margin: 0 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 100px auto 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .ponce, .toto {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #303030;
+      color: #ffffff;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .ponce:hover, .toto:hover {
+      background-color: #ff6b6b;
+      color: #ffffff;
+    }
+
+    .datos {
+      padding: 10px;
+      background-color: #303030;
+      color: #ffffff;
+      text-align: left;
+      border-radius: 0px;
+      width: 200px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .datos:hover {
+      background-color: #0000ff; /* Color azul al pasar el mouse */
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="back"></div>
+
+<nav>
+  <h1> Lenguajes Principales </h1>
+  <a href="importantes.html">Lenguajes Importantes</a>
+  <a href="index.html">Menu Principal</a>
+  <a href="utiles.html">Lenguajes Mas Utiles</a>
+</nav>
+
+<div class="container">
+  <div class="ponce">
+    <p><strong>¿Que Es JavaScript?</strong></p>
+    <p>lenguaje de programación de alto nivel, interpretado y multiplataforma. Es uno de los tres componentes principales para el desarrollo web junto con HTML 
+      <br><br>
+      Además del desarrollo web, JavaScript también se utiliza en otros contextos, como el desarrollo de aplicaciones móviles
+      <br><br>
+      desarrollo de aplicaciones de servidor  desarrollo de juegos  desarrollo de extensiones de navegador, 
+      <br><br>
+            <br><br>
+      Algunas de las cosas para las que sirve son: 
+      <br><br>
+      <br><br>
+      1- Manejo de eventos: Puedes utilizar JavaScript para detectar eventos del usuario, como clics de ratón, pulsaciones de teclas, movimientos del ratón, etc., y ejecutar funciones específicas en respuesta a estos eventos. 
+      <br><br>
+      2- Validación de formularios: JavaScript se usa comúnmente para validar los datos ingresados por los usuarios en formularios web antes de enviarlos al servidor. Esto ayuda a garantizar que los datos enviados sean correctos y válidos.
+      <br><br>
+      3- Comunicación con el servidor: JavaScript puede realizar solicitudes al servidor web en segundo plano sin necesidad de recargar la página,
+      <br><br>
+      4- Animaciones y efectos visuales: Con JavaScript, puedes crear animaciones y efectos visuales en elementos HTML y CSS, lo que mejora la experiencia del usuario
+    </p>
+  </div>
+<body>
+
+<video width="1000" height="660" controls>
+  <source src="java.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
+
+  <div class="toto">
+    <p><strong> ¿Que Es Python ?</strong></p>
+    <p> es un lenguaje de programación de alto nivel, interpretado, de propósito general y multiplataforma. Fue creado por Guido van Rossum y lanzado por primera vez en 1991. Desde entonces, Python ha ganado una amplia aceptación y popularidad en la comunidad de desarrollo de software debido a su sintaxis clara y legible, así como a su versatilidad y facilidad de uso.
+      <br><br>
+      <br><br>
+      Algunos de los usos son :
+      <br><br>
+      <br><br>
+      1- Desarrollo de Aplicaciones Web: Python es ampliamente utilizado en el desarrollo de aplicaciones web utilizando frameworks como Django, Flask y Pyramid.
+<br><br>
+      2- Análisis de Datos y Ciencia de Datos: Python cuenta con bibliotecas poderosas como NumPy, Pandas y Matplotlib que facilitan el análisis, manipulación y visualización de datos.
+<br><br>
+      3- Inteligencia Artificial y Aprendizaje Automático: Con bibliotecas como TensorFlow, Keras y PyTorch, Python es utilizado para construir modelos de aprendizaje automático y sistemas de inteligencia artificial.
+<br><br>
+      4- Automatización de Tareas: Python es ideal para automatizar tareas repetitivas y secuencias de comandos gracias a su sintaxis clara y a las bibliotecas como os y subprocess.
+    </p>
+  </div>
+</div>
+
+
+</body>
+</html>
